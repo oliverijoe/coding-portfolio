@@ -147,9 +147,12 @@ h4 {
 nav ul li {
   font-size: 2rem;
   list-style-type: none;
-  text-decoration: none;
   display: inline;
   padding: 10px;
+}
+
+nav ul li a:hover {
+  color:rgb(255, 106, 47);
 }
 
 /* Hero Section */
@@ -172,8 +175,21 @@ header {
 
 #about img {
   border-radius: 100%;
+  border-color: rgb(255, 106, 47);
+  border-width: 1rem;
 }
 
+/* Skills Section */
+
+#skills ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 1rem;
+}
+
+#skills ul li i:hover {
+  color:rgb(255, 106, 47);
+}
 
 /* ==========================================================================
    Helper classes
