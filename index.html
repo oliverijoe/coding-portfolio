@@ -12,9 +12,15 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  
   <!-- Place favicon.ico in the root directory -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -22,9 +28,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;700&display=swap" rel="stylesheet">
-
-  <meta name="theme-color" content="#fafafa">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
 </head>
 
@@ -50,10 +54,10 @@
     <div class="content-wrapper">
       <img src="./img/joe-picture-smaller.jpg" alt="joe-pic" />
       <h3 class="title">About Me</h3>
-      <p>I went to college for teacher education in mathematics and religious studies. I have spent the last few years in fundraising and development. 
-        In that time, I had many encounters with web design and project management. I took the time and effort to familiarize myself with front-end web 
-        development on Skillcrush.com and had an amazing time rediscovering my skills and passion for this craft. My goal is to become software engineer 
-        at a company who strives to make the world a better place for those that need to most help. </p>
+      <div class="about-description">
+        <p>With a certification in Frontend Web Development from Skillcrush.com, my goal is to become software engineer 
+          at a company who strives to make the world a better place for those who need it most. </p>
+      </div>
     </div>
   </section>
 
@@ -86,6 +90,14 @@
       <h3 class="title">Projects</h3>
       <div class="project">
         <img src="img/github-repo-gallery-screenshot.png" alt="repo-gallery" />
+        <h4><a href="https://oliverijoe.github.io/github-repo-gallery/" target="_blank">My GitHub Repo Gallery Website</a></h4>
+        <p><span>Description: </span>On this website, you will be able to search throughout my GitHub and check out all of my cool 
+          repos. This utilizes API connection in order to gather data from my account.</p><br>
+        <p><span>Skills Used: </span>HTML, CSS, JavaScript, Responsive Web Design, API</p><br>
+        <p><span>What I like about this project: </span>The satisfaction of the instant search command as you type out your search!</p><br>
+      </div>
+      <div class="project">
+        <img src="img/github-repo-gallery-screenshot.png" alt="repo-gallery" />
         <h4>My GitHub Repo Gallery Website</h4>
         <p><span>Description: </span>Sample sample sample</p><br>
         <p><span>Skills Used: </span>Sample sample sample</p><br>
@@ -110,9 +122,11 @@
       <h3>Find Me on the Internet</h3>
       <div class="social-icons">
         <ul>
-          <li><a href="https://www.linkedin.com/in/joe-oliveri-5143921b2/"><img src="img/linkedin.png" alt="LinkedIn" /></a></li>
-          <li><a href="https://github.com/oliverijoe"><img src="img/github.png" alt="github icon" /></a></li>
-      </ul>
+          <li>
+            <i class="fab fa-linkedin fa-4x"></i>
+          </li>
+          <li><i class="fab fa-github fa-4x"></i></li>
+        </ul>
       </div>
     </div>
   </section>
