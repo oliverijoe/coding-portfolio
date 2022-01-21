@@ -107,7 +107,7 @@ body {
 }
 
 img {
-  width: 15rem;
+  width: 13rem;
 }
 
 a {
@@ -116,7 +116,7 @@ a {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -127,11 +127,11 @@ p span {
 
 h1 {
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
 }
 
 h2 span {
@@ -139,12 +139,12 @@ h2 span {
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   margin: 0;
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin: 0;
 }
 
@@ -196,6 +196,15 @@ header {
 
 #about img {
   align-self: center;
+  transition: transform .2s; 
+}
+
+#about img:hover {
+  transform: scale(1.2);
+}
+
+#about h3 {
+  padding-top: 3rem;
 }
 
 #about .about-description {
@@ -211,7 +220,7 @@ header {
 #skills ul li {
   list-style-type: none;
   display: inline;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 #skills ul li i:hover {
@@ -223,6 +232,11 @@ header {
 #projects {
   display: flex;
   flex-wrap: row wrap;
+}
+
+#projects .title {
+  font-size: 2rem;
+  padding-bottom: 20px;
 }
 
 #projects img {
