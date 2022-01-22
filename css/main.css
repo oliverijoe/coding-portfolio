@@ -213,6 +213,8 @@ header {
 #about img {
   align-self: center;
   transition: transform .2s; 
+  border-radius: 100%;
+  border: 5px solid rgb(255, 106, 47);
 }
 
 #about img:hover {
