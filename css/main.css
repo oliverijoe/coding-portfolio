@@ -253,6 +253,14 @@ header {
   color:rgb(255, 106, 47);
 }
 
+#skills h3 {
+  font-size: 1.15em;
+}
+
+#skills h3 span {
+  color:rgb(255, 106, 47);
+}
+
 /* Projects Section */
 
 #projects {
@@ -267,7 +275,12 @@ header {
 
 #projects img {
   width: 100%;
+  max-width: 550px;
   margin-bottom: 2em;
+}
+
+#projects .project a:hover {
+  color:rgb(255, 106, 47);
 }
 
 #projects .project {
