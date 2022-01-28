@@ -279,7 +279,7 @@ header {
   margin-bottom: 2em;
 }
 
-#projects .project a:hover {
+#projects a:hover {
   color:rgb(255, 106, 47);
 }
 
@@ -307,11 +307,11 @@ header {
   margin-bottom: 1em;
   margin-top: 2em;
 }
-
 #contact h4 {
   color:rgb(255, 106, 47);
   margin-bottom: 0.5em;
 }
+
 
 #contact p {
   margin-bottom: 0.5em;
@@ -337,6 +337,11 @@ footer {
   padding-top: 5em;
   padding-bottom: 1em;
   bottom: 0;
+}
+
+footer h4 {
+  color:rgb(255, 106, 47);
+  margin-bottom: 0.5em;
 }
 
 /* ==========================================================================
@@ -496,6 +501,21 @@ footer {
 
   #projects p {
     font-size: 1.15em;
+  }
+
+  #contact .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  #contact .contact-info, .internet-links {
+    width: 450px;
+  }
+
+  #contact .internet-links h3 {
+    margin-bottom: 2em;
   }
 
 
