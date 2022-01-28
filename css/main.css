@@ -102,10 +102,6 @@ body {
   width: 100%;
 }
 
-main {
-  margin-top: 30px;
-}
-
 .content-wrapper {
   display: flex;
   justify-content: center;
@@ -223,6 +219,7 @@ header {
   transition: transform .2s; 
   border-radius: 100%;
   border: 5px solid rgb(255, 106, 47);
+  margin-top: 80px;
 }
 
 #about img:hover {
@@ -272,6 +269,7 @@ header {
 #projects {
   display: flex;
   flex-direction: column;
+  padding-top: 80px;
 }
 
 #projects .title {
