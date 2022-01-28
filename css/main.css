@@ -102,6 +102,10 @@ body {
   width: 100%;
 }
 
+main {
+  margin-top: 30px;
+}
+
 .content-wrapper {
   display: flex;
   justify-content: center;
@@ -158,6 +162,7 @@ ul {
 /* Nav Bar */
 
 nav {
+  overflow: hidden;
   position: fixed;
   top: 0;
   align-self: center;
@@ -313,11 +318,11 @@ header {
   margin-bottom: 1em;
   margin-top: 2em;
 }
-#contact h4 {
+
+#contact .contact-sub {
   color:rgb(255, 106, 47);
   margin-bottom: 0.5em;
 }
-
 
 #contact p {
   margin-bottom: 0.5em;
@@ -353,6 +358,11 @@ footer p {
 footer h4 {
   color:rgb(255, 106, 47);
   margin-bottom: 0.5em;
+}
+
+footer hr {
+  width: "100%";
+  color: "white";
 }
 
 /* ==========================================================================
