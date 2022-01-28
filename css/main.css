@@ -17,6 +17,7 @@ html {
   line-height: 1.4;
   padding: 0;
   margin: 0;
+ scroll-behavior: smooth;
 }
 
 /*
@@ -277,6 +278,11 @@ header {
   width: 100%;
   max-width: 550px;
   margin-bottom: 2em;
+  border: 3px solid rgb(255, 106, 47, .9);
+}
+
+#projects img:hover {
+  border-color: rgb(233, 255, 250);
 }
 
 #projects a:hover {
@@ -284,9 +290,9 @@ header {
 }
 
 #projects .project {
- width: 80%;
- align-self: center;
- margin-bottom: 3em;
+  width: 80%;
+  align-self: center;
+  margin-bottom: 3em;
 }
 
 #projects h4 {
@@ -337,6 +343,11 @@ footer {
   padding-top: 5em;
   padding-bottom: 1em;
   bottom: 0;
+  width: 80%;
+}
+
+footer p {
+  font-size: 16px;
 }
 
 footer h4 {
@@ -484,23 +495,35 @@ footer h4 {
   }
 
   #projects {
-    width: 100%;
+    max-width: 1500px;
   }
 
   #projects .content-wrapper {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    align-items: flex-start;
+    margin: 0;
   }
 
   #projects .project {
-    width: 500px;
-    margin: 3em;
+    display: flex;
+    flex-basis: calc(50% - 50px);
+    justify-content: center;
+    flex-direction: column;
     align-self: flex-start;
+    padding: 20px;
+
   }
 
   #projects p {
     font-size: 1.15em;
+    padding: 0 20px;
+  }
+
+  #projects .project img {
+    width: 80%;
+    align-self: center;
+    border-width: 7px;
   }
 
   #contact .content-wrapper {
@@ -508,6 +531,7 @@ footer h4 {
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
+    padding: 100px 0;
   }
 
   #contact .contact-info, .internet-links {
@@ -516,6 +540,10 @@ footer h4 {
 
   #contact .internet-links h3 {
     margin-bottom: 2em;
+  }
+
+  footer h4 {
+    font-size: 2em;
   }
 
 
