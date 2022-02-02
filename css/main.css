@@ -97,7 +97,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgb(3, 27, 71);
+/*  background-color: rgb(3, 27, 71); */
+  background-image: linear-gradient(rgb(3, 27, 71), rgb(7, 37, 146));
+  background-size: fit;
   color:rgb(233, 255, 250);
   width: 100%;
 }
@@ -162,8 +164,9 @@ nav {
   position: fixed;
   top: 0;
   align-self: center;
-  background-color: rgb(3, 27, 71, .9);
+  background-color: rgb(3, 27, 71);
   width: 100%;
+  box-shadow: 5px 5px 8px rgb(10, 53, 209);
 }
 
 nav ul li {
@@ -258,6 +261,7 @@ header {
 
 #skills h3 {
   font-size: 1.6em;
+  padding: 0 10px;
 }
 
 #skills h3 span {
