@@ -104,11 +104,23 @@ body {
   width: 100%;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
 .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
 }
 
 img {
@@ -166,14 +178,14 @@ nav {
   align-self: center;
   background-color: rgb(3, 27, 71);
   width: 100%;
-  box-shadow: 5px 5px 8px rgb(10, 53, 209);
+  box-shadow: 5px 5px 8px rgb(10, 53, 209); 
 }
 
 nav ul li {
   font-size: 1.1rem;
   list-style-type: none;
   display: inline;
-  padding: 0.4em;
+  padding: 0.7rem;
 }
 
 nav ul li a:hover {
@@ -193,11 +205,12 @@ header .hero {
 /* Hover Transition over hero title */
 /* Changes background and font color when hovering off and on */
 header h1 {
-  padding: 0.5em;
-  margin-top: 5em;
-  margin-bottom: 3em;
+  padding: 1em;
+  margin-top: 4em;
+  margin-bottom: 0.5em;
   transition-property: background-color; 
   transition-duration: 1s;
+  border-radius: 80%;
 }
 
 header h1:hover {
@@ -212,7 +225,7 @@ header h2 {
 }
 
 header {
-  padding-bottom: 6rem;
+  padding-bottom: 3em;
 }
 
 /* About Section */
@@ -455,6 +468,15 @@ footer hr {
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and (min-width: 700px) {
+ /* Adjusting the nav bar for tablet devices */
+
+  nav ul li {
+    padding: 2rem;
+  }
+
+}
+
 @media only screen and (min-width: 1000px) {
   /* Style adjustments for viewports that meet the condition */
   
@@ -472,8 +494,8 @@ footer hr {
   }
 
   header h1 {
-    margin-top: 3em;
-    margin-bottom: 1.25em;
+    margin-top: 2.5em;
+    margin-bottom: 0;
     font-size: 5em;
   }
 
