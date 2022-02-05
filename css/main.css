@@ -545,8 +545,19 @@ footer hr {
     justify-content: center;
     flex-direction: column;
     align-self: flex-start;
-    padding: 20px;
+    padding: 10px;
+    border-radius: 5%;
+    min-height: 800px;
+    max-width: 40%;;
+    margin: 30px;
+    color:rgb(255, 106, 47);
+    background: rgb(233, 255, 250);
+    transition: transform .2s; 
+    box-shadow: 0 4px 8px 0 rgba(255, 106, 47, 0.507), 0 6px 20px 0 rgba(255, 106, 47, 0.534);
+  }
 
+  #projects .project:hover {
+    transform: scale(1.01);
   }
 
   #projects p {
@@ -554,10 +565,22 @@ footer hr {
     padding: 0 20px;
   }
 
+  #projects p span {
+    color:rgb(3, 27, 71);
+  }
+
+  #projects .project a{
+    color:rgb(10, 53, 209);
+  }
+
   #projects .project img {
-    width: 80%;
+    width: 70%;
     align-self: center;
     border-width: 7px;
+  }
+
+  #projects .project img:hover {
+    border-color: rgb(10, 53, 209);
   }
 
   #contact .content-wrapper {
