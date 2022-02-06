@@ -534,24 +534,26 @@ footer hr {
 
   #projects .content-wrapper {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    flex-direction: row;
+    align-content: center;
     margin: 0;
+    width: 100%;
   }
 
   #projects .project {
     display: flex;
-    flex-basis: calc(50% - 50px);
+    flex-basis: calc(40% - 50px);
     justify-content: center;
     flex-direction: column;
     align-self: flex-start;
-    padding: 10px;
-    border-radius: 5%;
-    min-height: 800px;
-    max-width: 40%;;
+    padding: 40px;
+    border-radius: 20%;
+    min-height: 50%;
+    max-width: 50%;;
     margin: 30px;
     color:rgb(255, 106, 47);
-    background: rgb(233, 255, 250);
+    background: white;
     transition: transform .2s; 
     box-shadow: 0 4px 8px 0 rgba(255, 106, 47, 0.507), 0 6px 20px 0 rgba(255, 106, 47, 0.534);
   }
@@ -559,6 +561,8 @@ footer hr {
   #projects .project:hover {
     transform: scale(1.01);
   }
+
+  #projects .project
 
   #projects p {
     font-size: 1.15em;
@@ -574,7 +578,7 @@ footer hr {
   }
 
   #projects .project img {
-    width: 70%;
+    width: 50%;
     align-self: center;
     border-width: 7px;
   }
