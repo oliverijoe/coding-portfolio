@@ -534,19 +534,32 @@ footer hr {
 
   #projects .content-wrapper {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    flex-direction: row;
+    align-content: center;
     margin: 0;
+    width: 100%;
   }
 
   #projects .project {
     display: flex;
-    flex-basis: calc(50% - 50px);
+    flex-basis: calc(40% - 50px);
     justify-content: center;
     flex-direction: column;
     align-self: flex-start;
-    padding: 20px;
+    padding: 40px;
+    border-radius: 20%;
+    min-height: 50%;
+    max-width: 50%;;
+    margin: 30px;
+    color:rgb(255, 106, 47);
+    background: white;
+    transition: transform .2s; 
+    box-shadow: 0 4px 8px 0 rgba(255, 106, 47, 0.507), 0 6px 20px 0 rgba(255, 106, 47, 0.534);
+  }
 
+  #projects .project:hover {
+    transform: scale(1.01);
   }
 
   #projects p {
@@ -554,10 +567,22 @@ footer hr {
     padding: 0 20px;
   }
 
+  #projects p span {
+    color:rgb(3, 27, 71);
+  }
+
+  #projects .project a{
+    color:rgb(10, 53, 209);
+  }
+
   #projects .project img {
-    width: 80%;
+    width: 50%;
     align-self: center;
     border-width: 7px;
+  }
+
+  #projects .project img:hover {
+    border-color: rgb(10, 53, 209);
   }
 
   #contact .content-wrapper {
